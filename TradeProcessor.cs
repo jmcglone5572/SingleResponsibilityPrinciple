@@ -43,7 +43,7 @@ namespace SingleResponsibilityPrinciple
                 var tradeAmount = 0;
                 if(!int.TryParse(fields[1], out tradeAmount))
                 {
-                    Console.WriteLine("WARN Trade amoune on line {0} not a valid integer: '{1}'", lineCount, fields[1]);
+                    Console.WriteLine("WARN Trade amount on line {0} not a valid integer: '{1}'", lineCount, fields[1]);
                 }
 
                 decimal tradePrice;
