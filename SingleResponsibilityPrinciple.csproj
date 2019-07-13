@@ -42,13 +42,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DummyTradeStorage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleTradeMapper.cs" />
+    <Compile Include="SimpleTradeParser.cs" />
+    <Compile Include="SimpleTradeValidator.cs" />
+    <Compile Include="StreamTradeDataProvider.cs" />
     <Compile Include="TradeProcessor.cs" />
-    <Compile Include="TradeRecord.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Contracts\SingleResponsibilityPrinciple.Contracts\SingleResponsibilityPrinciple.Contracts.csproj">
+      <Project>{283fe4ef-ddf9-49cb-91c7-ad2110a68379}</Project>
+      <Name>SingleResponsibilityPrinciple.Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
